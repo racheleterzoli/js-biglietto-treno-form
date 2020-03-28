@@ -46,7 +46,7 @@ body{
   height: 160px;
 }
 .testo h1{
-  font-size: 13px;
+  font-size: 20px;
 }
 .carrozza{
   margin-top:2%;
@@ -89,9 +89,18 @@ text-align:center;
 .bottone{
   margin-top:40px;
   margin-left:20px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: grey;
   color: #B22222;
   height:42px;
   width: 80px;
+}
+#km{
+  border:1px solid #B22222;
+}
+#eta{
+  border:1px solid #B22222;
+}
+#nomecognome{
+  border:1px solid #B22222;
 }
