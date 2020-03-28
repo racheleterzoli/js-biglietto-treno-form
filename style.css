@@ -1,0 +1,103 @@
+body{
+  background-color: #B22222;
+}
+.row {
+  margin-right: -15px;
+  margin-left: 0px;
+}
+.titolo{
+  text-align: center;
+  font-weight: 800;
+  color: white;
+}
+.titolo h1{
+  margin-bottom: 0px;
+}
+.riquadrouno{
+  margin-top:50px;
+  height: 250px;
+  width: auto;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+.giu{
+  padding-top:20px;
+  padding-bottom:
+}
+.riquadrodue{
+  /* display: none; */
+  margin-top:10px;
+  height: 230px;
+  width: auto;
+  background-color: white;
+}
+#biglietto{
+  font-size:25px;
+  background-color: white;
+
+}
+.datipasseggero{
+  margin-top:2%;
+  border:1px solid black;
+  height: 160px;
+  background-color: grey;
+}
+.offerta{
+  margin-top:2%;
+  border:1px solid black;
+  height: 160px;
+}
+.testo h1{
+  font-size: 20px;
+}
+.carrozza{
+  margin-top:2%;
+  border:1px solid black;
+  height: 160px;
+}
+.codice{
+  margin-top:2%;
+  border:1px solid black;
+  height: 160px;
+}
+.costo{
+  margin-top:2%;
+  border:1px solid black;
+  height: 160px;
+}
+.prova{
+  height: 150px;
+  border: 1px solid black;
+  width: 100%;
+  color: #B22222;
+  display: inline-block;
+}
+.provauno{
+  height: 100px;
+  border: 1px solid black;
+  width: 100%;
+}
+.nomecognome{
+  margin-left:20%;
+  margin-right:5%;
+  height: 100%;
+  width: 20%;
+  background-color: red;
+float: left;
+}
+
+.km{
+  margin-right:5%;
+  height: 100%;
+  width: 20%;
+  background-color: pink;
+  float: left;
+}
+.età{
+  height: 100%;
+  width: 10%;
+  background-color: blue;
+  float: left;
+}
