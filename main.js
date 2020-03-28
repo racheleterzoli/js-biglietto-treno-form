@@ -1,19 +1,14 @@
-// finestra introduttiva
-// alert("Buongiorno e benvenuti in TreniTreni, le farò qualche domanda per calcolare il prezzo del suo biglietto. In base al suo chilometraggio e  alla sua età avrà il suo prezzo personalizzato. La ringrazio per averci scelti. Prema ok per continuare ");
+function calcolabiglietto(){
 // creare variabile nome e cognome
-var identity;
+var identity = document.getElementById("nomecognome").value;
+document.getElementById('stampanome').innerHTML = identity;
 // creare variabile km
-var km;
+var km = document.getElementById("km").value;
 // creare variabile età
-var age;
+var age = document.getElementById("eta").value;
 // creare variabile costo km senza sconto
 var costoperkm;
-// chiedere il nome e il cognome
-// identity = prompt("Inserisca nome e cognome per favore.");
-// chiedere il kilometraggio
-// km = prompt ("inserire il numero di chilometri che vuole fare");
-// chiedere l'età
-// age = prompt ("inserisca la sua età per favore");
+var nomeofferta = "standard";
 // moltiplicare il numero di km x 0.21 euro
 costoperkm = (km * 0.21);
 // controllare eta se maggiore di 65 o minore di 18
@@ -22,12 +17,26 @@ costoperkm = (km * 0.21);
 // se maggiore di 65 applicare uno sconto del 40
 if (age < 18) {
   costoperkm = (costoperkm - ((costoperkm * 20)/100));
-  document.getElementById('password').innerHTML = 'Gentilissimo/a '+ identity + ' il costo del tuo biglietto è :' + costoperkm + ' euro in quanto abbiamo applicato lo sconto del 20 per cento considerando che lei è under 18';
+  nomeofferta = "Biglietto Ridotto";
 }
 else if (age > 65){
     costoperkm = (costoperkm - ((costoperkm * 40)/100));
-    document.getElementById('password').innerHTML = 'Gentilissimo/a '+ identity + ' il costo del tuo biglietto è :' + costoperkm + ' euro in quanto abbiamo applicato lo sconto del 40 per cento considerando che lei è over 65';
+    nomeofferta = "Biglietto Ridotto";
 }
-else{
-  document.getElementById('password').innerHTML = 'Gentilissimo/a '+ identity + ' il costo del tuo biglietto è :' + costoperkm + ' euro, non abbiamo applicato nessuno sconto, in quanto non rientra in nessuna categoria per gli sconti';
+document.getElementById('stampacosto').innerHTML = Math.floor(costoperkm) + "&euro;";
+document.getElementById('stampaofferta').innerHTML = nomeofferta;
+document.getElementById('stampacodice').innerHTML = "58964";
+document.getElementById('stampacarrozza').innerHTML = "5";
+document.getElementsByClassName("riquadrodue")[0].style.display = "block";
+}
+function azzeraivalori(){
+  document.getElementsByClassName("riquadrodue")[0].style.display = "none";
+  document.getElementById('stampacosto').innerHTML = "";
+  document.getElementById('stampaofferta').innerHTML = "";
+  document.getElementById('stampacodice').innerHTML = "";
+  document.getElementById('stampacarrozza').innerHTML = ""
+  document.getElementById("km").value = "";
+  document.getElementById("eta").value = "18";
+  document.getElementById("nomecognome").value="";
+
 }

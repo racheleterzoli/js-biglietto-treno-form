@@ -20,97 +20,121 @@
   <header>
 
     <div class="titolo">
-      <h1> <strong>CALCOLA IL PREZZO DEL TUO BIGLIETTO</strong>  </h1>
+      <h1><strong>CALCOLA IL PREZZO DEL TUO BIGLIETTO</strong></h1>
     </div>
     <!-- <div id="stampa"></div> -->
   </header>
   <main>
 
-<div class="conteiner">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-offset-1 col-lg-10">
-    <div class="riquadrouno">
-      <div class="conteiner">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="prova">
-            <div class="nomecognome testo">
-              <h1>Nome Cognome</h1>
-            </div>
+        <div class=" col-lg-12"><!--col-lg-offset-1-->
+          <div class="riquadrouno">
+            <!--<div class="container">
+              <div class="row">
+                <div class="col-lg-12">-->
+                  <div class="prova row">
+                    <div class="nomecognome testo col-lg-offset-1 col-lg-4">
+                      <h1>Nome Cognome</h1>
+                      <input type="text" id="nomecognome" class=" form-control">
+                    </div>
 
-            <div class="km testo">
-              <h1>Km da percorrere</h1>
-            </div>
-            <div class="età testo">
-              <h1>Fascia d'età</h1>
-            </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="provauno">
-                <button class="bottone" type="button" name="button"><strong>Genera</strong></button>
-                <button class="bottone" type="button" name="button"><strong>Annulla</strong></button>
+                    <div class="km testo  col-lg-4" >
+                      <h1>Km da percorrere</h1>
+                      <input type="text" id="km" class="form-control">
+                    </div>
+                    <div class="eta testo  col-lg-2">
+                      <h1>Fascia d'et&agrave;</h1>
+                      <select name="eta" id="eta" class="form-control">
+                        <option value="0">Minorenne</option>
+                        <option value ="18" selected="selected">Maggiorenne</option>
+                        <option value ="66">Over 65</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="provauno">
+                      <button class="bottone" type="button" name="button" onclick="calcolabiglietto()"><strong>Genera</strong></button>
+                      <button class="bottone" type="button" name="button" onclick="azzeraivalori()"><strong>Annulla</strong></button>
+                    </div>
+
+                  </div>
+
+                <!--</div>
+
+
               </div>
 
-            </div>
-
+            </div>-->
           </div>
 
-
         </div>
 
       </div>
-        </div>
-
-      </div>
-
     </div>
-</div>
     <div class="titolo giu">
       <h1> <strong>IL TUO BIGLIETTO</strong>  </h1>
     </div>
-    <div class="conteiner">
+    <div class="container" >
       <div class="row">
-        <div class="col-lg-offset-1 col-lg-10">
+        <div class="col-lg-12">
           <div class="riquadrodue">
             <span id="biglietto"><strong>DETTAGLIO PASSEGGERI </strong></span>
-            <div class="conteiner">
+            <div class="container">
               <div class="row">
                 <div class="col-lg-3">
                   <div class="datipasseggero testo">
-                      <h1><strong>NOME PASSEGGERO</strong></h1>
+                    <h1><strong>NOME PASSEGGERO</strong></h1>
+                    <p id="stampanome">
+
+                    </p>
+                  </div>
+
+                </div>
+                <div class="col-lg-1">
+                  <div class="offerta testo">
+                    <h1><strong>Offerta</strong></h1>
+                    <div id="stampaofferta">
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-lg-1">
+                  <div class="carrozza testo">
+                    <h1><strong>Carrozza</strong></h1>
+                    <div id="stampacarrozza">
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-lg-1">
+                  <div class="codice testo">
+                    <h1><strong>Codice CP</strong></h1>
+                    <div id="stampacodice">
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-lg-1">
+                  <div class="costo testo">
+                    <h1><strong>Costo Biglietto</strong></h1>
+                    <div id="stampacosto">
+
+                    </div>
+                  </div>
+
                 </div>
 
-              </div>
-              <div class="col-lg-2">
-                <div class="offerta testo">
-                  <h1><strong>Offerta</strong></h1>
+
               </div>
 
-            </div>
-            <div class="col-lg-1">
-              <div class="carrozza testo">
-                <h1><strong>Carrozza</strong></h1>
-            </div>
 
-          </div>
-          <div class="col-lg-1">
-            <div class="codice testo">
-              <h1><strong>Codice CP</strong></h1>
-          </div>
-
-        </div>
-        <div class="col-lg-2">
-          <div class="costo testo">
-            <h1><strong>Costo Biglietto</strong></h1>
-        </div>
-
-      </div>
 
 
             </div>
-
-
-
 
           </div>
 
@@ -118,11 +142,9 @@
 
       </div>
 
-    </div>
+    </main>
+    <footer>
+    </footer>
 
-  </main>
-  <footer>
-  </footer>
-
-</body>
-</html>
+  </body>
+  </html>
